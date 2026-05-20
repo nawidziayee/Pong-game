@@ -1,0 +1,46 @@
+n<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crazy Pong 2.0</title>
+<link rel="stylesheet" href="Pong.css">
+</head>
+<body>
+
+<!-- Start Screen -->
+<div id="startScreen">
+    <h1>CRAZY PONG</h1>
+
+    <select id="mode">
+        <option value="single">Single Player</option>
+        <option value="multi">Multiplayer</option>
+    </select>
+
+    <br><br>
+
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="insane">Insane</option>
+    </select>
+
+    <br><br>
+    <button id="startBtn">START GAME</button>
+</div>
+
+<!-- Game UI -->
+<div id="gameContainer">
+    <div id="scoreText">0 : 0</div>
+    <canvas id="gameBoard" width="600" height="350"></canvas>
+    <br>
+    <button id="resetBtn">RESET</button>
+</div>
+
+<!-- Sounds -->
+<audio id="hitSound" src="sounds/hit.wav"></audio>
+<audio id="scoreSound" src="scroe.wav"></audio>
+<audio id="startSound" src="sounds/start.wav"></audio>
+
+<script src="Pong.js"></script>
+</body>
+</html>
